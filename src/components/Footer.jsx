@@ -11,7 +11,7 @@ const Footer = () => {
      w-[80%] lg:pt-8 pt-4 justify-between"
     >
       <img src={zuriLogo} alt="zuri-logo" />
-      <p>HNG Internship 9 Frontend Task</p>
+      <p className="text-gray-500">HNG Internship 9 Frontend Task</p>
       <img src={i4G} alt="ingressive-logo" />
     </div>
   );

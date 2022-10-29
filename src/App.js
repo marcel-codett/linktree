@@ -1,5 +1,4 @@
 import "./App.css";
-import { routes, route } from "react-dom";
 import Header from "./components/Header";
 import { useState } from "react";
 import { items } from "../src/assets/links";
@@ -24,8 +23,8 @@ function App() {
       >
         <Header theme={theme} switchTheme={switchTheme} />
         <LinkTree cardItems={items} />
-        <div className="flex items-center space-x-10 my-20">
-          <a href="">
+        <div className="flex items-center text-[#667085] space-x-10 my-20">
+          <a href="https://hng.slack.com/archives/D048FS4CCKC">
             <FaSlack
               className="w-10 h-10 
               dark:text-white
@@ -34,7 +33,7 @@ function App() {
               alt="slack"
             />
           </a>
-          <a href="">
+          <a href="https://github.com/marcel-codett">
             <FaGithub
               className="
             dark:text-white w-10 h-10"
