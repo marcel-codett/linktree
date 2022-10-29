@@ -12,12 +12,12 @@ export const items = [
   {
     title: "Zuri",
     subtitle: "Zuri Books",
-    link: "https://book.zuri.team", //zuri book link
+    link: "https://books.zuri.team", //zuri book link
   },
   {
     title: "Zuri",
     subtitle: "Python Books",
-    link: "https://book.zuri.team/python-for-beginners/ref-id=Marcel", //zuri book link
+    link: "https://books.zuri.team/python-for-beginners?ref-id=Marcel", //zuri book link
   },
   {
     title: "Background Check",
@@ -27,6 +27,6 @@ export const items = [
   {
     title: "Design",
     subtitle: "Design Books",
-    link: "https://book.zuri.team/design-rules",
+    link: "https://books.zuri.team/design-rules",
   },
 ];
