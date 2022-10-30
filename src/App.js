@@ -1,32 +1,24 @@
 import "./App.css";
 import Header from "./components/Header";
-import { useState } from "react";
 import { items } from "../src/assets/links";
 import slack from "../src/assets/slack.png";
-import { FaSlack, FaGithub } from "react-icons/fa";
+import github from "../src/assets/github.png";
+// import { FaSlack, FaGithub } from "react-icons/fa";
 import LinkTree from "./components/LinkTree";
 import Footer from "./components/Footer";
 function App() {
-  const [theme, setTheme] = useState("light");
-
-  const switchTheme = () => {
-    const newTheme = theme === "light" ? "dark" : "light";
-
-    setTheme(newTheme);
-    console.log(newTheme);
-  };
   return (
-    <div className={theme === "dark" ? "dark" : ""}>
+    <div className="">
       <div
-        className="dark:bg-main-dark-bg
+        className="dark:bg-main-dark-bg 
       overflow-x-hidden py-20 grid place-items-center h-max"
       >
-        <Header theme={theme} switchTheme={switchTheme} />
+        <Header />
         <LinkTree cardItems={items} />
         <div className="flex items-center text-[#667085] space-x-10 my-20">
           <a href="https://hng.slack.com/archives/D048FS4CCKC">
-            <FaSlack
-              className="w-10 h-10 
+            <img
+              className="w-7 h-7 
               dark:text-white
              object-cover"
               src={slack}
@@ -34,9 +26,11 @@ function App() {
             />
           </a>
           <a href="https://github.com/marcel-codett">
-            <FaGithub
+            <img
               className="
-            dark:text-white w-10 h-10"
+            dark:text-white w-7 h-7 object-cover"
+              src={github}
+              alt="github"
             />
           </a>
         </div>

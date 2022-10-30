@@ -1,9 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-
+import { registerLicense } from "@syncfusion/ej2-base";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+
+registerLicense(
+  "ORg4AjUWIQA/Gnt2VVhjQlFaclhJXGJWfUx0RWFbb196cVRMZV9BJAtUQF1hS39TdkFiXX9dcHFXQWhe"
+);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

@@ -1,32 +1,36 @@
 export const items = [
   {
-    title: "Zuri",
-    subtitle: "Zuri Team",
-    link: "https://training.zuri.team/", //zuri training link
-  },
-  {
-    title: "Twitter",
-    subtitle: "Twitter Link",
+    id: "twitter",
+    title: "Twitter Link",
     link: "https://twitter.com/sopuruSings", //Twitter Profile link
   },
   {
-    title: "Zuri",
-    subtitle: "Zuri Books",
+    id: "btn__zuri",
+    title: "Zuri Team",
+    link: "https://training.zuri.team/", //zuri training link
+  },
+  {
+    id: "book",
+    subtitle: "Get Books on Design and coding",
+    title: "Zuri Books",
     link: "https://books.zuri.team", //zuri book link
   },
   {
-    title: "Zuri",
-    subtitle: "Python Books",
+    id: "book__python",
+    subtitle: "Get indepth knowledge on python",
+    title: "Python Books",
     link: "https://books.zuri.team/python-for-beginners?ref-id=Marcel", //zuri book link
   },
   {
-    title: "Background Check",
-    subtitle: "Background Check for Coders",
+    subtitle: "Find out the technical background of your programmer",
+    title: "Background Check for Coders",
     link: "https://background.zuri.team",
   },
   {
-    title: "Design",
-    subtitle: "Design Books",
+    id: "book__design",
+    subtitle:
+      "Discover tips & guidelines you need to create truly professional designs",
+    title: "Design Books",
     link: "https://books.zuri.team/design-rules",
   },
 ];
