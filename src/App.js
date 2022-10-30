@@ -1,4 +1,7 @@
 import "./App.css";
+
+import "../node_modules/@syncfusion/ej2-base/styles/material.css";
+import "../node_modules/@syncfusion/ej2-react-popups/styles/material.css";
 import Header from "./components/Header";
 import { items } from "../src/assets/links";
 import slack from "../src/assets/slack.png";
