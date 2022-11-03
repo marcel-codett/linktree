@@ -2,13 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 const Card = (props) => {
   return (
-    <Link
-      id={props.id}
-      key={props.id}
-      to={props.link}
-      target="_blank"
-      rel="noopener noreferrer"
-    >
+    <Link id={props.id} to={props.link}>
       <div
         className="bg-[#EAECF0]
     lg:w-1000 w-300 md:w-400 rounded-md text-center 
