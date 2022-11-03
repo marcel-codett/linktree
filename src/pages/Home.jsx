@@ -36,7 +36,6 @@ const Home = () => {
               />
             </a>
           </div>
-          <Footer />
         </div>
       </div>
     </div>

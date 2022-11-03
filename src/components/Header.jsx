@@ -25,7 +25,7 @@ const Header = () => {
   }, [screenSize]);
 
   return (
-    <header className=" lg:w-800 w-300 md:w-400 grid place-items-center relative">
+    <header className=" lg:w-800 w-300 md:w-400 grid place-items-center text-center relative">
       <nav className=" ">
         {activeMenu === true ? (
           <img
