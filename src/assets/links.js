@@ -41,7 +41,7 @@ export const items = [
   },
   {
     key: "7",
-    title: "Contact",
+    title: "Contact Me",
     subtitle: "get in touch with me",
     id: "contact",
     page_route: true,

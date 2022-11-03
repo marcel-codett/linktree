@@ -6,7 +6,7 @@ const PageLayout = () => {
   return (
     <div
       className="dark:bg-main-dark-bg 
-    overflow-x-hidden  py-20 grid place-items-center h-max"
+    overflow-x-hidden py-20 grid place-items-center h-max"
     >
       <Outlet />
       <Footer />
