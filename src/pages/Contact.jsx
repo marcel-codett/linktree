@@ -1,11 +1,15 @@
-import React, { useState } from "react";
-import { FiSend } from "react-icons/fi";
-import { Popup } from "@syncfusion/ej2-popups";
+import React, { useRef, useState } from "react";
+
 const Contact = () => {
   const name = "marcel";
   const [popup, setPopup] = useState(false);
+  let btnRef = useRef();
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    if (btnRef.current) {
+      btnRef.current.setAttribute("disabled", "disabled");
+    }
 
     setPopup(true);
   };
@@ -29,10 +33,14 @@ const Contact = () => {
               First Name
             </label>
             <input
+              required
               className="border rounded-md
               p-3 mt-2 outline-none items-stretch
-              invalid:border-red-600
+  
+  
               focus:valid:border-green-400
+              focus:invalid:border-red-600 
+              valid:border-green-400
                border-[#D0D5DD]"
               placeholder="Enter your first name"
               type="text"
@@ -46,10 +54,13 @@ const Contact = () => {
               Last Name
             </label>
             <input
+              required
               pattern="^[A-Za-z][A-Za-z0-9_]{3,29}$"
               className="border rounded-md
-              invalid:border-red-600
               focus:valid:border-green-400
+              focus:invalid:border-red-600 
+              valid:border-green-400
+            
              p-3 mt-2 outline-none items-stretch
               border-[#D0D5DD]"
               placeholder="Enter your last name"
@@ -81,10 +92,13 @@ const Contact = () => {
             Message
           </label>
           <textarea
+            required
             name="message"
             minLength="10"
             className="border h-[132px] rounded-md
-             invalid:border-red-600
+             
+             focus:invalid:border-red-600 
+             valid:border-green-400
              focus:valid:border-green-400
             
                  p-2 mt-2 outline-none items-stretch
@@ -107,9 +121,9 @@ const Contact = () => {
           </label>
         </div>
         <button
-          className="w-full
-        text-white mt-4 py-4 bg-[#1560EF] 
-       hover:bg-[#1520EF]  rounded-md"
+          ref={btnRef}
+          className={`w-full text-white disabled:opacity-40 mt-4
+           py-4 bg-[#1560EF] hover:bg-[#1520EF] rounded-md`}
           id="btn__submit"
           type="submit"
         >
